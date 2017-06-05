@@ -1,3 +1,29 @@
-<p>
-  todo-list works!
-</p>
+<div class="well well-sm" style="margin: 3rem;">
+  <h1 class="text-center">Angular Bootstrap Todo</h1>
+</div>
+
+<table class="table todo-list">
+  <thead>
+    <tr>
+      <th class="col-task">Task</th>
+      <th class="col-priority">Priority</th>
+      <th class="col-action">Action</th>
+    </tr>
+  </thead>
+  <tbody id="table">
+    <tr *ngFor="let todo of todos" td-todo [todo]="todo"></tr>
+    <tr>
+      <td>
+        <input type="text" class="form-control" id="task" [(ngModel)]="newTodo.task">
+      </td>
+      <td>
+        <select class="form-control" id="priority" [(ngModel)]="newTodo.priority">
+          <option *ngFor="let opt of TodoPriority | enumArray" [value]="opt.value">{{opt.key}}</option>
+        </select>
+      </td>
+      <td>
+        <button type="button" id="add-button" class="btn btn-default" (click)="addTodo()">Add</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
