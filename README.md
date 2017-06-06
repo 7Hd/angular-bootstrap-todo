@@ -1,6 +1,6 @@
 # Anagular Bootstrap Todo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0. Reference [Bootstrap Todo](https://codepen.io/cglawson/pen/mEWYYe) and [todomvc-angular-4](https://github.com/addyosmani/todomvc-angular-4).
 
 ## Development server
 
